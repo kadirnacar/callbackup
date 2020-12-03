@@ -99,7 +99,7 @@ public class Recorder {
                         ChannelModule.callScript("data", inBuf, offset);
                     //}
                 } catch (Exception ex) {
-                    ChannelModule.callScript(ex.getMessage(),null,0);
+                    ChannelModule.callScript("data", inBuf, offset);
                 }
             }
         }
